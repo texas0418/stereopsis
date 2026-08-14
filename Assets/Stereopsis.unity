@@ -2429,7 +2429,7 @@ GameObject:
   - component: {fileID: 415979951}
   - component: {fileID: 415979950}
   - component: {fileID: 415979949}
-  - component: {fileID: 415979948}
+  - component: {fileID: 415979952}
   m_Layer: 0
   m_Name: Card_1774
   m_TagString: Untagged
@@ -2452,19 +2452,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 525862204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &415979948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415979946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3522124399a47ccb977d2f9dd77c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.CardPickup
-  card: 1774
 --- !u!23 &415979949
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2543,6 +2530,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 415979946}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &415979952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415979946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6075cd28a512b41d695969881eb9c1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Stereopsis.Runtime::Stereopsis.CardPickup
+  card: 1774
 --- !u!1 &474085554
 GameObject:
   m_ObjectHideFlags: 0
@@ -4805,7 +4805,7 @@ GameObject:
   - component: {fileID: 955953245}
   - component: {fileID: 955953244}
   - component: {fileID: 955953243}
-  - component: {fileID: 955953242}
+  - component: {fileID: 955953246}
   m_Layer: 0
   m_Name: Card_1698
   m_TagString: Untagged
@@ -4828,19 +4828,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 525862204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &955953242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 955953240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3522124399a47ccb977d2f9dd77c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.CardPickup
-  card: 1698
 --- !u!23 &955953243
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4919,6 +4906,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955953240}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &955953246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955953240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6075cd28a512b41d695969881eb9c1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Stereopsis.Runtime::Stereopsis.CardPickup
+  card: 1698
 --- !u!1 &978985845
 GameObject:
   m_ObjectHideFlags: 0
@@ -5179,7 +5179,7 @@ GameObject:
   - component: {fileID: 1007595035}
   - component: {fileID: 1007595034}
   - component: {fileID: 1007595033}
-  - component: {fileID: 1007595032}
+  - component: {fileID: 1007595036}
   m_Layer: 0
   m_Name: Card_1922
   m_TagString: Untagged
@@ -5202,19 +5202,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1037835141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1007595032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1007595030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3522124399a47ccb977d2f9dd77c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.CardPickup
-  card: 1922
 --- !u!23 &1007595033
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5293,6 +5280,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1007595030}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1007595036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007595030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6075cd28a512b41d695969881eb9c1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Stereopsis.Runtime::Stereopsis.CardPickup
+  card: 1922
 --- !u!1 &1035444901
 GameObject:
   m_ObjectHideFlags: 0
@@ -7436,6 +7436,7 @@ GameObject:
   - component: {fileID: 1488965588}
   - component: {fileID: 1488965587}
   - component: {fileID: 1488965586}
+  - component: {fileID: 1488965590}
   m_Layer: 0
   m_Name: OiledBundle
   m_TagString: Untagged
@@ -7548,6 +7549,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1488965584}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1488965590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488965584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b01014c1a78d4befb85afdc33da1dac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Stereopsis.Runtime::Stereopsis.DevicePickup
 --- !u!1 &1522930052
 GameObject:
   m_ObjectHideFlags: 0
@@ -10577,7 +10590,7 @@ GameObject:
   - component: {fileID: 2071653005}
   - component: {fileID: 2071653004}
   - component: {fileID: 2071653003}
-  - component: {fileID: 2071653002}
+  - component: {fileID: 2071653006}
   m_Layer: 0
   m_Name: Card_1861
   m_TagString: Untagged
@@ -10600,19 +10613,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1037835141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2071653002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2071653000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d3522124399a47ccb977d2f9dd77c29, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.CardPickup
-  card: 1861
 --- !u!23 &2071653003
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10691,6 +10691,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071653000}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2071653006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071653000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6075cd28a512b41d695969881eb9c1c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Stereopsis.Runtime::Stereopsis.CardPickup
+  card: 1861
 --- !u!1 &2076195745
 GameObject:
   m_ObjectHideFlags: 0

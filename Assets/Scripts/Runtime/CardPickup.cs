@@ -9,10 +9,4 @@ namespace Stereopsis
         [SerializeField] Stereopsis.Core.StereoCard card;
         public Stereopsis.Core.StereoCard Card => card;
     }
-
-    /// <summary>The stereoscope itself, before it is yours. Tap to take
-    /// Abigail's instrument and gain the ability to raise it.</summary>
-    public sealed class DevicePickup : MonoBehaviour
-    {
-    }
 }

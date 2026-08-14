@@ -1,4 +1,3 @@
-#if UNITY_EDITOR || DEVELOPMENT_BUILD
 using Stereopsis.Core;
 using UnityEngine;
 
@@ -31,6 +30,9 @@ namespace Stereopsis
 
         void OnGUI()
         {
+#if !UNITY_EDITOR && !DEVELOPMENT_BUILD
+            return; // gameplay code may always Say(); only the drawing is dev-only
+#endif
             if (_director == null) return;
             var s = _director.State;
 
@@ -63,4 +65,3 @@ namespace Stereopsis
         }
     }
 }
-#endif
