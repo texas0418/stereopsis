@@ -110,6 +110,13 @@ namespace Stereopsis
                 return;
             }
 
+            var seq = PickUtil.Pick<BeatSequence>(_cam, pos, inspectMask, 0.6f);
+            if (seq != null && !seq.IsComplete)
+            {
+                seq.TryAdvance(_director != null ? _director.Bag : null);
+                return;
+            }
+
             var mech = PickUtil.Pick<Mechanism>(_cam, pos, inspectMask, 0.6f);
             if (mech != null && !mech.IsOpen)
             {

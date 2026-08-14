@@ -22,9 +22,11 @@ namespace Stereopsis
         /// <summary>The hand inventory. Tiny by design (DECISIONS 11).</summary>
         public Inventory Bag { get; } = new Inventory();
 
-        void Start()
+        void Awake()
         {
             // The one thing you bring into this game from outside it.
+            // Awake, not Start: critical state must never wait for the
+            // first frame (a backgrounded editor may not tick one).
             Bag.TryAdd("pry-bar");
         }
 

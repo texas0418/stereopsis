@@ -1478,7 +1478,7 @@ GameObject:
   - component: {fileID: 314760510}
   - component: {fileID: 314760509}
   - component: {fileID: 314760508}
-  - component: {fileID: 314760507}
+  - component: {fileID: 314760511}
   m_Layer: 0
   m_Name: ProspectDoor
   m_TagString: Untagged
@@ -1501,32 +1501,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 216187327}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &314760507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 314760505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a5d05ab15f8b4ff3beb2c9ddc534cc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.Mechanism
-  requiresItemId: 
-  consumesItem: 0
-  reveals:
-  - {fileID: 302324313}
-  animated: {fileID: 0}
-  moveDelta: {x: 0, y: 0, z: -0.16}
-  rotateDelta: {x: 0, y: 0, z: 0}
-  seconds: 0.6
-  openMessage: Press the back of the left pigeonhole and the prospect door comes
-    out whole. A hidden drawer behind it. A brass seal die.
-  lockedMessage: 
-  neverOpens: 0
-  requiresFlag: 
-  setsFlag: 
 --- !u!23 &314760508
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1605,6 +1579,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314760505}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &314760511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 314760505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1deac442a6a58433dace230d31df1a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.BeatSequence
+  beats:
+  - message: The left pigeonhole is half a hand shallower than its neighbors.
+    lockedMessage: 
+    requiresItemId: 
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals: []
+    setsFlag: 
+  - message: Press the back panel - a click from somewhere inside the case.
+    lockedMessage: 
+    requiresItemId: 
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals: []
+    setsFlag: 
+  - message: 'The prospect door comes out whole. Behind it, a hidden drawer: a brass
+      seal die.'
+    lockedMessage: 
+    requiresItemId: 
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0, z: -0.16}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals:
+    - {fileID: 302324313}
+    setsFlag: 
+  animated: {fileID: 0}
+  secondsPerBeat: 0.45
 --- !u!1 &326462924
 GameObject:
   m_ObjectHideFlags: 0
@@ -2683,6 +2701,8 @@ Transform:
   - {fileID: 415979947}
   - {fileID: 1035444902}
   - {fileID: 955953241}
+  - {fileID: 1092297044}
+  - {fileID: 1565240682}
   m_Father: {fileID: 2086530689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &549125672
@@ -3140,6 +3160,142 @@ Transform:
   - {fileID: 326462925}
   m_Father: {fileID: 2086530689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &638734037
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 638734038}
+  - component: {fileID: 638734042}
+  - component: {fileID: 638734041}
+  - component: {fileID: 638734040}
+  - component: {fileID: 638734039}
+  m_Layer: 0
+  m_Name: Strap
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &638734038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638734037}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.15, y: 0, z: -0.55}
+  m_LocalScale: {x: 0.22, y: 0.015, z: 0.05}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1037835141}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &638734039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638734037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 871a59ef81fc4408f9f098fcacfc07ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.Readable
+  title: A cut leather strap
+  body: 'Half buried in the void. Cut clean at one end, and stamped near the buckle
+    with a maker''s mark.
+
+
+    It belonged to something that was carried, and the
+    something is gone.
+
+
+    [placeholder - matches a mark you will not see for hours]'
+  setsFlag: 
+--- !u!23 &638734040
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638734037}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: be282a8a547724fc9a9ac978689f3269, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &638734041
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638734037}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &638734042
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638734037}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &643613208
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,7 +4137,7 @@ GameObject:
   - component: {fileID: 810947111}
   - component: {fileID: 810947110}
   - component: {fileID: 810947109}
-  - component: {fileID: 810947108}
+  - component: {fileID: 810947112}
   m_Layer: 0
   m_Name: OddBottle
   m_TagString: Untagged
@@ -4004,32 +4160,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 525862204}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &810947108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 810947106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a5d05ab15f8b4ff3beb2c9ddc534cc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.Mechanism
-  requiresItemId: 
-  consumesItem: 0
-  reveals:
-  - {fileID: 1438428292}
-  animated: {fileID: 0}
-  moveDelta: {x: 0, y: 0.06, z: 0}
-  rotateDelta: {x: 0, y: 60, z: 0}
-  seconds: 0.6
-  openMessage: 'It is heavier than the others and it does not slosh. Inside, rolled
-    in cotton wool: a small brass key.'
-  lockedMessage: 
-  neverOpens: 0
-  requiresFlag: 
-  setsFlag: 
 --- !u!23 &810947109
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4108,6 +4238,58 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810947106}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &810947112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810947106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1deac442a6a58433dace230d31df1a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.BeatSequence
+  beats:
+  - message: Heavier than the others, and silent. Wax sealed under the cap.
+    lockedMessage: 
+    requiresItemId: 
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals: []
+    setsFlag: 
+  - message: The wax is off.
+    lockedMessage: The wax flakes under your thumbnail.
+    requiresItemId: 
+    requiresFlag: 
+    taps: 2
+    moveDelta: {x: 0, y: 0, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals: []
+    setsFlag: 
+  - message: Two full turns, stiff then free, and the cap is off.
+    lockedMessage: The cap fights the whole turn.
+    requiresItemId: 
+    requiresFlag: 
+    taps: 2
+    moveDelta: {x: 0, y: 0, z: 0}
+    rotateDelta: {x: 0, y: 60, z: 0}
+    reveals: []
+    setsFlag: 
+  - message: A plug of cotton wool - pull. A small brass key slides into your palm.
+    lockedMessage: 
+    requiresItemId: 
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0.06, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals:
+    - {fileID: 1438428292}
+    setsFlag: 
+  animated: {fileID: 0}
+  secondsPerBeat: 0.45
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5294,6 +5476,7 @@ Transform:
   - {fileID: 1771655198}
   - {fileID: 2101679615}
   - {fileID: 913294717}
+  - {fileID: 638734038}
   m_Father: {fileID: 2086530689}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1071765151
@@ -5435,6 +5618,143 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1071765151}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1092297043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1092297044}
+  - component: {fileID: 1092297048}
+  - component: {fileID: 1092297047}
+  - component: {fileID: 1092297046}
+  - component: {fileID: 1092297045}
+  m_Layer: 0
+  m_Name: SloshBottle_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1092297044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092297043}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.52, y: 0.87, z: -0.85}
+  m_LocalScale: {x: 0.06, y: 0.14, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 525862204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1092297045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092297043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5d05ab15f8b4ff3beb2c9ddc534cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.Mechanism
+  requiresItemId: 
+  consumesItem: 0
+  reveals: []
+  animated: {fileID: 0}
+  moveDelta: {x: 0, y: 0, z: 0}
+  rotateDelta: {x: 0, y: 0, z: 0}
+  seconds: 0.6
+  openMessage: 
+  lockedMessage: It sloshes. Medicine.
+  neverOpens: 1
+  requiresFlag: 
+  setsFlag: 
+--- !u!23 &1092297046
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092297043}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3e37f460ec6844eaf8a833bf8284f35e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1092297047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092297043}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1092297048
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092297043}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1093477903
 GameObject:
@@ -7479,6 +7799,143 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554449081}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1565240681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1565240682}
+  - component: {fileID: 1565240686}
+  - component: {fileID: 1565240685}
+  - component: {fileID: 1565240684}
+  - component: {fileID: 1565240683}
+  m_Layer: 0
+  m_Name: SloshBottle_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1565240682
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565240681}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.62, y: 0.87, z: -0.90000004}
+  m_LocalScale: {x: 0.06, y: 0.14, z: 0.06}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 525862204}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1565240683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565240681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5d05ab15f8b4ff3beb2c9ddc534cc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.Mechanism
+  requiresItemId: 
+  consumesItem: 0
+  reveals: []
+  animated: {fileID: 0}
+  moveDelta: {x: 0, y: 0, z: 0}
+  rotateDelta: {x: 0, y: 0, z: 0}
+  seconds: 0.6
+  openMessage: 
+  lockedMessage: It sloshes. Medicine.
+  neverOpens: 1
+  requiresFlag: 
+  setsFlag: 
+--- !u!23 &1565240684
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565240681}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 3e37f460ec6844eaf8a833bf8284f35e, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_MaskInteraction: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &1565240685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565240681}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!33 &1565240686
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565240681}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1641909847
 GameObject:
   m_ObjectHideFlags: 0
@@ -8510,7 +8967,7 @@ GameObject:
   - component: {fileID: 1857355386}
   - component: {fileID: 1857355385}
   - component: {fileID: 1857355384}
-  - component: {fileID: 1857355383}
+  - component: {fileID: 1857355387}
   m_Layer: 0
   m_Name: RustedTin
   m_TagString: Untagged
@@ -8533,31 +8990,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1037835141}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1857355383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857355381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a5d05ab15f8b4ff3beb2c9ddc534cc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.Mechanism
-  requiresItemId: pry-bar
-  consumesItem: 0
-  reveals:
-  - {fileID: 1007595030}
-  animated: {fileID: 0}
-  moveDelta: {x: 0, y: 0.05, z: 0.06}
-  rotateDelta: {x: 0, y: 30, z: 0}
-  seconds: 0.6
-  openMessage: The lid grinds off. Something flat inside, wrapped in wax paper.
-  lockedMessage: Rusted shut. You need something to twist against.
-  neverOpens: 0
-  requiresFlag: 
-  setsFlag: 
 --- !u!23 &1857355384
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8636,6 +9068,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857355381}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1857355387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857355381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1deac442a6a58433dace230d31df1a33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.BeatSequence
+  beats:
+  - message: The lid seam is a ring of rust. It will not move by thumb.
+    lockedMessage: 
+    requiresItemId: 
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals: []
+    setsFlag: 
+  - message: The bar tip seats into the seam.
+    lockedMessage: Rusted shut. You need something to twist against.
+    requiresItemId: pry-bar
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals: []
+    setsFlag: 
+  - message: Twist - it jams. Twist back the other way - the lid grinds off. Wax
+      paper inside.
+    lockedMessage: 
+    requiresItemId: pry-bar
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0.05, z: 0.06}
+    rotateDelta: {x: 0, y: 30, z: 0}
+    reveals:
+    - {fileID: 1007595030}
+    setsFlag: 
+  animated: {fileID: 0}
+  secondsPerBeat: 0.45
 --- !u!1 &1877230397
 GameObject:
   m_ObjectHideFlags: 0
@@ -10779,23 +11255,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 2103517944}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a5d05ab15f8b4ff3beb2c9ddc534cc1, type: 3}
+  m_Script: {fileID: 11500000, guid: 1deac442a6a58433dace230d31df1a33, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.Mechanism
-  requiresItemId: pry-bar
-  consumesItem: 0
-  reveals:
-  - {fileID: 1221815612}
-  - {fileID: 1857355381}
+  m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.BeatSequence
+  beats:
+  - message: It rocks under the tap. It will not lift by hand.
+    lockedMessage: 
+    requiresItemId: 
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals: []
+    setsFlag: 
+  - message: The bar seats into the gap with a click.
+    lockedMessage: One end sits proud. It wants levering.
+    requiresItemId: pry-bar
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0, y: 0, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 0}
+    reveals: []
+    setsFlag: 
+  - message: The board pivots up with a crack. A shallow void beneath.
+    lockedMessage: 
+    requiresItemId: pry-bar
+    requiresFlag: 
+    taps: 1
+    moveDelta: {x: 0.3, y: 0.08, z: 0}
+    rotateDelta: {x: 0, y: 0, z: 20}
+    reveals:
+    - {fileID: 1221815612}
+    - {fileID: 1857355381}
+    - {fileID: 638734037}
+    setsFlag: 
   animated: {fileID: 0}
-  moveDelta: {x: 0.3, y: 0.08, z: 0}
-  rotateDelta: {x: 0, y: 0, z: 20}
-  seconds: 0.6
-  openMessage: The board levers up. A shallow void beneath.
-  lockedMessage: One end sits proud. It wants levering.
-  neverOpens: 0
-  requiresFlag: 
-  setsFlag: 
+  secondsPerBeat: 0.45
 --- !u!1 &2114788233
 GameObject:
   m_ObjectHideFlags: 0
