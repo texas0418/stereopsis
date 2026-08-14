@@ -21,5 +21,8 @@ namespace Stereopsis
         }
 
         public static void Clear() => _flags.Clear();
+
+        /// <summary>For the save system.</summary>
+        public static IEnumerable<string> All => _flags;
     }
 }

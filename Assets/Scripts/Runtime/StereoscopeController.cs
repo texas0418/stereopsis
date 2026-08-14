@@ -47,12 +47,14 @@ namespace Stereopsis
         public bool IsRaised => _raised;
         public bool HasDevice => _hasDevice;
 
-        /// <summary>Called when the player takes Abigail's stereoscope.</summary>
-        public void GrantDevice()
+        /// <summary>Called when the player takes Abigail's stereoscope.
+        /// quiet = save-system restore, no announcement.</summary>
+        public void GrantDevice(bool quiet = false)
         {
             if (_hasDevice) return;
             _hasDevice = true;
-            DebugHud.Say("A stereoscope, wrapped in oilcloth. Press S to raise it.");
+            if (!quiet)
+                DebugHud.Say("A stereoscope, wrapped in oilcloth. Press S to raise it.");
         }
 
         void Awake()

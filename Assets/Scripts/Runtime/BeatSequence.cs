@@ -39,11 +39,46 @@ namespace Stereopsis
 
         int _index;
         int _tapsDone;
+        bool _poseCaptured;
+        Vector3 _homePos;
+        Quaternion _homeRot;
 
         public bool IsComplete => _index >= beats.Length;
         public int CurrentBeat => _index;
         public event Action<int> BeatCompleted;
         public event Action Completed;
+
+        void Awake() => EnsurePose();
+
+        void EnsurePose()
+        {
+            if (_poseCaptured) return;
+            var t = animated != null ? animated : transform;
+            _homePos = t.localPosition;
+            _homeRot = t.localRotation;
+            _poseCaptured = true;
+        }
+
+        /// <summary>Save-system restore: jump to the state after
+        /// `index` completed beats — cumulative end pose, no messages,
+        /// no animation. Reveals are handled by the save system's
+        /// active-state pass.</summary>
+        public void RestoreTo(int index)
+        {
+            EnsurePose();
+            _index = Mathf.Clamp(index, 0, beats.Length);
+            _tapsDone = 0;
+            var pos = _homePos;
+            var rot = _homeRot;
+            for (int i = 0; i < _index; i++)
+            {
+                pos += beats[i].moveDelta;
+                rot *= Quaternion.Euler(beats[i].rotateDelta);
+            }
+            var t = animated != null ? animated : transform;
+            t.localPosition = pos;
+            t.localRotation = rot;
+        }
 
         /// <summary>One tap on the station. Returns true if anything
         /// happened (advance or partial tap); false only when blocked.</summary>

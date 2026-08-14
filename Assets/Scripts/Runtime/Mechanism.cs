@@ -36,8 +36,46 @@ namespace Stereopsis
         [SerializeField] string setsFlag = "";
 
         bool _open;
+        bool _poseCaptured;
+        Vector3 _homePos;
+        Quaternion _homeRot;
+
         public bool IsOpen => _open;
         public event Action Opened;
+
+        void Awake() => EnsurePose();
+
+        void EnsurePose()
+        {
+            if (_poseCaptured) return;
+            var t = animated != null ? animated : transform;
+            _homePos = t.localPosition;
+            _homeRot = t.localRotation;
+            _poseCaptured = true;
+        }
+
+        /// <summary>Save-system restore: mark open and jump to the end
+        /// pose, no messages, no animation. Reveals are handled by the
+        /// save system's active-state pass.</summary>
+        public void RestoreOpen()
+        {
+            EnsurePose();
+            _open = true;
+            var t = animated != null ? animated : transform;
+            t.localPosition = _homePos + moveDelta;
+            t.localRotation = _homeRot * Quaternion.Euler(rotateDelta);
+        }
+
+        /// <summary>Save-system restore: mark closed and return to the
+        /// original pose.</summary>
+        public void RestoreClosed()
+        {
+            EnsurePose();
+            _open = false;
+            var t = animated != null ? animated : transform;
+            t.localPosition = _homePos;
+            t.localRotation = _homeRot;
+        }
 
         public void TryOpen(Stereopsis.Core.Inventory bag)
         {
