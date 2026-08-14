@@ -25,6 +25,7 @@ namespace Stereopsis
         {
             if (_instance == null || _instance._open) return;
             if (!InteractionGate.Claim(_instance)) return;
+            Sfx.Play("paper.open");
             _instance._title = title;
             _instance._body = body;
             _instance._open = true;
@@ -35,6 +36,7 @@ namespace Stereopsis
             if (_open && CloseRequested())
             {
                 _open = false;
+                Sfx.Play("paper.close");
                 InteractionGate.Release(this);
             }
         }

@@ -1601,6 +1601,8 @@ MonoBehaviour:
     rotateDelta: {x: 0, y: 0, z: 0}
     reveals: []
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   - message: Press the back panel - a click from somewhere inside the case.
     lockedMessage: 
     requiresItemId: 
@@ -1610,6 +1612,8 @@ MonoBehaviour:
     rotateDelta: {x: 0, y: 0, z: 0}
     reveals: []
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   - message: 'The prospect door comes out whole. Behind it, a hidden drawer: a brass
       seal die.'
     lockedMessage: 
@@ -1621,6 +1625,8 @@ MonoBehaviour:
     reveals:
     - {fileID: 302324313}
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   animated: {fileID: 0}
   secondsPerBeat: 0.45
 --- !u!1 &326462924
@@ -2081,6 +2087,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &398286749
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2842,6 +2850,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!1 &561420144
 GameObject:
   m_ObjectHideFlags: 0
@@ -2902,6 +2912,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &561420147
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3040,6 +3052,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &585976335
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3357,6 +3371,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &643613211
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3766,6 +3782,8 @@ MonoBehaviour:
   neverOpens: 1
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &769215347
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3983,6 +4001,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!1 &808045825
 GameObject:
   m_ObjectHideFlags: 0
@@ -4260,6 +4280,8 @@ MonoBehaviour:
     rotateDelta: {x: 0, y: 0, z: 0}
     reveals: []
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   - message: The wax is off.
     lockedMessage: The wax flakes under your thumbnail.
     requiresItemId: 
@@ -4269,6 +4291,8 @@ MonoBehaviour:
     rotateDelta: {x: 0, y: 0, z: 0}
     reveals: []
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   - message: Two full turns, stiff then free, and the cap is off.
     lockedMessage: The cap fights the whole turn.
     requiresItemId: 
@@ -4278,6 +4302,8 @@ MonoBehaviour:
     rotateDelta: {x: 0, y: 60, z: 0}
     reveals: []
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   - message: A plug of cotton wool - pull. A small brass key slides into your palm.
     lockedMessage: 
     requiresItemId: 
@@ -4288,6 +4314,8 @@ MonoBehaviour:
     reveals:
     - {fileID: 1438428292}
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   animated: {fileID: 0}
   secondsPerBeat: 0.45
 --- !u!1 &832575517
@@ -4399,6 +4427,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &857403448
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5355,6 +5385,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &1035444904
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5541,6 +5573,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &1071765154
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5678,6 +5712,8 @@ MonoBehaviour:
   neverOpens: 1
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &1092297046
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5816,6 +5852,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &1093477906
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6198,6 +6236,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &1164262153
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6661,6 +6701,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &1381432125
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7345,6 +7387,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &1482054728
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7734,6 +7778,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &1554449084
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7871,6 +7917,8 @@ MonoBehaviour:
   neverOpens: 1
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &1565240684
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8219,6 +8267,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!1 &1710826760
 GameObject:
   m_ObjectHideFlags: 0
@@ -8358,6 +8408,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!1 &1750870952
 GameObject:
   m_ObjectHideFlags: 0
@@ -8856,6 +8908,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!1 &1846584936
 GameObject:
   m_ObjectHideFlags: 0
@@ -9103,6 +9157,8 @@ MonoBehaviour:
     rotateDelta: {x: 0, y: 0, z: 0}
     reveals: []
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   - message: The bar tip seats into the seam.
     lockedMessage: Rusted shut. You need something to twist against.
     requiresItemId: pry-bar
@@ -9112,6 +9168,8 @@ MonoBehaviour:
     rotateDelta: {x: 0, y: 0, z: 0}
     reveals: []
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   - message: Twist - it jams. Twist back the other way - the lid grinds off. Wax
       paper inside.
     lockedMessage: 
@@ -9123,6 +9181,8 @@ MonoBehaviour:
     reveals:
     - {fileID: 1007595030}
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   animated: {fileID: 0}
   secondsPerBeat: 0.45
 --- !u!1 &1877230397
@@ -10359,6 +10419,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: 
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!1 &2063495593
 GameObject:
   m_ObjectHideFlags: 0
@@ -10485,6 +10547,7 @@ GameObject:
   - component: {fileID: 2069085068}
   - component: {fileID: 2069085069}
   - component: {fileID: 2069085070}
+  - component: {fileID: 2069085071}
   m_Layer: 0
   m_Name: _Systems
   m_TagString: Untagged
@@ -10578,6 +10641,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0deb8e0912125425db8c7beb89bc7094, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stereopsis.SaveSystem
+--- !u!114 &2069085071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069085064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75d99b6cce04c44339db08b36b224394, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Stereopsis.Runtime::Stereopsis.Sfx
+  library: {fileID: 11400000, guid: 33ca609930f5f491b93b428e88bf7fe0, type: 2}
 --- !u!1 &2071653000
 GameObject:
   m_ObjectHideFlags: 0
@@ -11081,6 +11157,8 @@ MonoBehaviour:
   neverOpens: 0
   requiresFlag: knows-name
   setsFlag: 
+  openSfx: 
+  lockedSfx: 
 --- !u!23 &2101679617
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11294,6 +11372,8 @@ MonoBehaviour:
     rotateDelta: {x: 0, y: 0, z: 0}
     reveals: []
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   - message: The bar seats into the gap with a click.
     lockedMessage: One end sits proud. It wants levering.
     requiresItemId: pry-bar
@@ -11303,6 +11383,8 @@ MonoBehaviour:
     rotateDelta: {x: 0, y: 0, z: 0}
     reveals: []
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   - message: The board pivots up with a crack. A shallow void beneath.
     lockedMessage: 
     requiresItemId: pry-bar
@@ -11315,6 +11397,8 @@ MonoBehaviour:
     - {fileID: 1857355381}
     - {fileID: 638734037}
     setsFlag: 
+    sfx: 
+    lockedSfx: 
   animated: {fileID: 0}
   secondsPerBeat: 0.45
 --- !u!1 &2114788233

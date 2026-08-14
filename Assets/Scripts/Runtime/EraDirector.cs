@@ -45,7 +45,11 @@ namespace Stereopsis
 
         void OnDisable() => State.EraChanged -= OnEraChanged;
 
-        void OnEraChanged(Era from, Era to) => Apply(to);
+        void OnEraChanged(Era from, Era to)
+        {
+            Sfx.Play("travel.arrive");
+            Apply(to);
+        }
 
         void Apply(Era era)
         {

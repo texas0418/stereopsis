@@ -45,7 +45,7 @@ namespace Stereopsis
 
             GUI.Label(new Rect(12, 8, 1400, 24), "YEAR: " + era + "    stereoscope: " + device + "    card: " + seated);
             GUI.Label(new Rect(12, 30, 1400, 24), "cards found: " + cards);
-            GUI.Label(new Rect(12, 52, 1400, 24), "bag: " + bag);
+            GUI.Label(new Rect(12, 52, 1400, 24), "bag: " + bag + "    sfx: " + Sfx.LastKey);
 
             if (UnityEngine.Time.time < _until && !string.IsNullOrEmpty(_msg))
                 GUI.Label(new Rect(12, 84, 1400, 26), "» " + _msg);

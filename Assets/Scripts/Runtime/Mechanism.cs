@@ -35,6 +35,12 @@ namespace Stereopsis
         [Tooltip("Knowledge flag set when opened. Empty = none.")]
         [SerializeField] string setsFlag = "";
 
+        [Tooltip("Sfx key on open. Empty = generic mech.open.")]
+        [SerializeField] string openSfx = "";
+
+        [Tooltip("Sfx key when refused. Empty = generic mech.locked.")]
+        [SerializeField] string lockedSfx = "";
+
         bool _open;
         bool _poseCaptured;
         Vector3 _homePos;
@@ -80,23 +86,17 @@ namespace Stereopsis
         public void TryOpen(Stereopsis.Core.Inventory bag)
         {
             if (_open) return;
-            if (neverOpens)
+            if (neverOpens ||
+                (!string.IsNullOrEmpty(requiresFlag) && !GameFlags.Has(requiresFlag)) ||
+                (!string.IsNullOrEmpty(requiresItemId) &&
+                 (bag == null || !bag.Has(requiresItemId))))
             {
-                if (!string.IsNullOrEmpty(lockedMessage)) DebugHud.Say(lockedMessage);
-                return;
-            }
-            if (!string.IsNullOrEmpty(requiresFlag) && !GameFlags.Has(requiresFlag))
-            {
-                if (!string.IsNullOrEmpty(lockedMessage)) DebugHud.Say(lockedMessage);
-                return;
-            }
-            if (!string.IsNullOrEmpty(requiresItemId) &&
-                (bag == null || !bag.Has(requiresItemId)))
-            {
+                Sfx.Play(string.IsNullOrEmpty(lockedSfx) ? "mech.locked" : lockedSfx);
                 if (!string.IsNullOrEmpty(lockedMessage)) DebugHud.Say(lockedMessage);
                 return;
             }
             _open = true;
+            Sfx.Play(string.IsNullOrEmpty(openSfx) ? "mech.open" : openSfx);
             if (consumesItem && !string.IsNullOrEmpty(requiresItemId))
                 bag.Remove(requiresItemId);
             if (!string.IsNullOrEmpty(setsFlag)) GameFlags.Set(setsFlag);

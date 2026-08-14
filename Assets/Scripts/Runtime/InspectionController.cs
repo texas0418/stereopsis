@@ -135,6 +135,7 @@ namespace Stereopsis
             _lastPointer = pos;
             _angVel = Vector2.zero;
             _phase = Phase.Lifting;
+            Sfx.Play("inspect.lift");
             StartCoroutine(LiftToEye());
         }
 
@@ -144,6 +145,7 @@ namespace Stereopsis
             {
                 if (_director != null && _director.Bag.TryAdd(_held.ItemId))
                 {
+                    Sfx.Play("inspect.take");
                     DebugHud.Say("Taken: " + _held.ItemId);
                     var taken = _heldT;
                     EndGesture();
@@ -159,6 +161,7 @@ namespace Stereopsis
             if (BackRequested())
             {
                 _phase = Phase.Returning;
+                Sfx.Play("inspect.return");
                 StartCoroutine(ReturnHome());
                 return;
             }

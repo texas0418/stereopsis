@@ -30,6 +30,10 @@ namespace Stereopsis
             public Vector3 rotateDelta;
             public GameObject[] reveals;
             public string setsFlag;
+            [Tooltip("Sfx key on completion. Empty = generic beat.done.")]
+            public string sfx;
+            [Tooltip("Sfx key when refused. Empty = generic beat.locked.")]
+            public string lockedSfx;
         }
 
         [SerializeField] Beat[] beats = new Beat[0];
@@ -87,14 +91,11 @@ namespace Stereopsis
             if (IsComplete) return false;
             var b = beats[_index];
 
-            if (!string.IsNullOrEmpty(b.requiresFlag) && !GameFlags.Has(b.requiresFlag))
+            if ((!string.IsNullOrEmpty(b.requiresFlag) && !GameFlags.Has(b.requiresFlag)) ||
+                (!string.IsNullOrEmpty(b.requiresItemId) &&
+                 (bag == null || !bag.Has(b.requiresItemId))))
             {
-                if (!string.IsNullOrEmpty(b.lockedMessage)) DebugHud.Say(b.lockedMessage);
-                return false;
-            }
-            if (!string.IsNullOrEmpty(b.requiresItemId) &&
-                (bag == null || !bag.Has(b.requiresItemId)))
-            {
+                Sfx.Play(string.IsNullOrEmpty(b.lockedSfx) ? "beat.locked" : b.lockedSfx);
                 if (!string.IsNullOrEmpty(b.lockedMessage)) DebugHud.Say(b.lockedMessage);
                 return false;
             }
@@ -104,6 +105,7 @@ namespace Stereopsis
             if (_tapsDone < needed)
             {
                 // partial progress; the locked line doubles as feedback
+                Sfx.Play("beat.tap");
                 if (!string.IsNullOrEmpty(b.lockedMessage)) DebugHud.Say(b.lockedMessage);
                 return true;
             }
@@ -111,6 +113,7 @@ namespace Stereopsis
             // beat completes: state first
             _tapsDone = 0;
             _index++;
+            Sfx.Play(string.IsNullOrEmpty(b.sfx) ? "beat.done" : b.sfx);
             if (!string.IsNullOrEmpty(b.setsFlag)) GameFlags.Set(b.setsFlag);
             if (b.reveals != null)
                 for (int i = 0; i < b.reveals.Length; i++)

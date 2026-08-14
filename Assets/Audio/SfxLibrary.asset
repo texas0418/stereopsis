@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04eebe7e020cd429199465b19098d672, type: 3}
+  m_Name: SfxLibrary
+  m_EditorClassIdentifier: Stereopsis.Runtime::Stereopsis.SfxLibrary
+  entries:
+  - key: mech.open
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: mech.locked
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: beat.tap
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: beat.done
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: beat.locked
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: scope.raise
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: scope.lower
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: scope.seat
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: scope.eject
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: scope.commit
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: inspect.lift
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: inspect.return
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: inspect.take
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: camera.focus
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: camera.back
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: paper.open
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: paper.close
+    layers: []
+    volume: 0
+    pitchJitter: 0
+  - key: travel.arrive
+    layers: []
+    volume: 0
+    pitchJitter: 0

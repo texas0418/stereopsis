@@ -97,8 +97,16 @@ namespace Stereopsis
 
             var s = _director.State;
 
-            if (SeatPressed(out var card)) { s.SeatCard(card); RefreshGhost(); }
-            else if (EjectPressed()) { s.Eject(); RefreshGhost(); }
+            if (SeatPressed(out var card))
+            {
+                if (s.SeatCard(card)) Sfx.Play("scope.seat");
+                RefreshGhost();
+            }
+            else if (EjectPressed())
+            {
+                if (s.Eject()) Sfx.Play("scope.eject");
+                RefreshGhost();
+            }
 
             // ---- the focus rail ----
             if (PointerDown(out var pos))
@@ -133,6 +141,7 @@ namespace Stereopsis
             if (!InteractionGate.Claim(this)) return;
             _raised = true;
             _rail = 0f;
+            Sfx.Play("scope.raise");
             RefreshGhost();
         }
 
@@ -142,6 +151,7 @@ namespace Stereopsis
             _rail = 0f;
             _dragging = false;
             _raised = false;
+            Sfx.Play("scope.lower");
             InteractionGate.Release(this);
         }
 
@@ -159,6 +169,7 @@ namespace Stereopsis
         IEnumerator CommitRoutine()
         {
             _animating = true;
+            Sfx.Play("scope.commit");
             // run the rail home: the ghost sharpens to full
             while (_rail < 1f)
             {

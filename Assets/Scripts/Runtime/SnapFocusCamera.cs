@@ -76,6 +76,7 @@ namespace Stereopsis
 
         public void FocusOn(FocusPoint fp)
         {
+            Sfx.Play("camera.focus");
             _focus = fp;
             _yaw = 0f;
             _pitch = fp.DefaultPitch;
@@ -91,6 +92,7 @@ namespace Stereopsis
 
         public void ReturnToOverview()
         {
+            Sfx.Play("camera.back");
             _focus = null;
             _dragging = false;
             if (overviewPose != null)
