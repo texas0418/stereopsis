@@ -604,8 +604,56 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9078113463487889976, guid: 84a0a5871eb15471aa02055432482127, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 985577750}
   m_SourcePrefab: {fileID: 100100000, guid: 84a0a5871eb15471aa02055432482127, type: 3}
+--- !u!1 &985577745 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9078113463487889976, guid: 84a0a5871eb15471aa02055432482127, type: 3}
+  m_PrefabInstance: {fileID: 985577744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &985577746 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2140927667625458648, guid: 84a0a5871eb15471aa02055432482127, type: 3}
+  m_PrefabInstance: {fileID: 985577744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &985577747 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 335358184946123351, guid: 84a0a5871eb15471aa02055432482127, type: 3}
+  m_PrefabInstance: {fileID: 985577744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &985577748 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7764025157480758570, guid: 84a0a5871eb15471aa02055432482127, type: 3}
+  m_PrefabInstance: {fileID: 985577744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &985577749 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5366807211675144617, guid: 84a0a5871eb15471aa02055432482127, type: 3}
+  m_PrefabInstance: {fileID: 985577744}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &985577750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 985577745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2c54a8f9edb84cea80243df8ab4acd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Stereopsis.Runtime::Stereopsis.StereoscopeView
+  holderParts:
+  - {fileID: 985577749}
+  - {fileID: 985577748}
+  - {fileID: 985577747}
+  railAxis: {x: 0, y: 0, z: 1}
+  nearOffset: -0.12
+  farOffset: 0
+  cardRenderer: {fileID: 985577746}
 --- !u!1 &1484841131
 GameObject:
   m_ObjectHideFlags: 0
