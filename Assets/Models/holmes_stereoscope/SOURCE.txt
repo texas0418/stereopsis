@@ -1,0 +1,6 @@
+Holmes-Bates Stereoscope
+Source: Sketchfab, "Holmes-Bates Stereoscope"
+License: CC Attribution (CC-BY) — MUST credit the author in game credits.
+URL: https://sketchfab.com/3d-models/holmes-bates-stereoscope-0dbe7a3be33b4b1594f9d77294f7a2ba
+Converted from .blend to glTF via Blender 5.2 headless, 2026-09-05.
+Parts: base, card, card_rest, hood, lens, lens.001, wires.
