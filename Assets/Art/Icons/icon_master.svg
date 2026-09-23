@@ -1,0 +1,28 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<clipPath id="lens"><circle cx="512" cy="512" r="360"/></clipPath>
+<linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#eccd7e"/>
+<stop offset="55%" stop-color="#b98f42"/>
+<stop offset="100%" stop-color="#8a6326"/>
+</linearGradient>
+<radialGradient id="field" cx="50%" cy="44%" r="75%">
+<stop offset="0%" stop-color="#1c150d"/>
+<stop offset="100%" stop-color="#0e0a06"/>
+</radialGradient>
+</defs>
+<rect width="1024" height="1024" fill="url(#field)"/>
+<g clip-path="url(#lens)">
+<polygon points="152,140 872,140 592,400 432,400" fill="#2a2016"/>
+<polygon points="152,884 872,884 592,570 432,570" fill="#3a2a1c"/>
+<polygon points="152,140 432,400 432,570 152,884" fill="#c4652a"/>
+<polygon points="872,140 592,400 592,570 872,884" fill="#45535e"/>
+<rect x="432" y="400" width="160" height="170" fill="#12100c"/>
+<rect x="444" y="412" width="136" height="146" fill="#8ea6b4"/>
+<rect x="506" y="412" width="12" height="146" fill="#d8c9a8"/>
+<rect x="444" y="479" width="136" height="12" fill="#d8c9a8"/>
+<path d="M210,470 A360 360 0 0 1 470 210" fill="none" stroke="#ffffff" stroke-width="14" opacity="0.10"/>
+</g>
+<circle cx="512" cy="512" r="360" fill="none" stroke="url(#brass)" stroke-width="50"/>
+<circle cx="512" cy="512" r="330" fill="none" stroke="#0d0a07" stroke-width="12"/>
+</svg>
